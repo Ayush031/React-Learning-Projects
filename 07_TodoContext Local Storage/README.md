@@ -1,8 +1,8 @@
-# React + Vite
+# Todo App
+Using Context API and Local Storage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### LiveDemo: [Visit Here](https://keytasks.vercel.app)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Descritption
+1. This project utilizes the use of Context API for state management.
+2. Local Storage is use to store the User Tasks on the device Browser Storage.
