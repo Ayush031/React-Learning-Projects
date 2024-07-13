@@ -4,8 +4,8 @@
 04_ReactRouter-Setup
 05_miniContext-Tut
 # 06_ThemeSwitcher
-07_Context Local Storage
+# 07_TodoContext Local Storage
 Notes
 
-# .gitignore
+.gitignore
 node_modules
