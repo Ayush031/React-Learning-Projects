@@ -1,1 +1,1 @@
-# Password Generator : [Live Demo](unique-password.vercel.app)
+# Password Generator : [Live Demo](https://unique-password.vercel.app)
