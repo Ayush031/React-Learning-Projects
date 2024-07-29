@@ -13,7 +13,6 @@ export class Service {
         this.databases = new Databases(this.client);
         this.bucket = new Storage(this.client);
     }
-
     async createPost({ title, content, status, featuredImage, userId, slug }) {
         try {
             return await this.databases.createDocument(
@@ -28,7 +27,6 @@ export class Service {
             throw error;
         }
     }
-
     async updatePost(slug, { title, content, status, featuredImage, userId }) {
         try {
             return await this.databases.updateDocument(
@@ -43,7 +41,6 @@ export class Service {
             throw error;
         }
     }
-
     async deletePost(slug) {
         try {
             await this.databases.deleteDocument(
@@ -57,7 +54,6 @@ export class Service {
             return false;
         }
     }
-
     async getPost(slug) {
         try {
             return await this.databases.deleteDocument(
@@ -70,7 +66,6 @@ export class Service {
             return false;
         }
     }
-
     async getPosts(queries = [Query.equal("status", "active")]) {
         try {
             return await this.databases.listDocuments(
@@ -84,9 +79,7 @@ export class Service {
             return false;
         }
     }
-
     // file uplaod service methods
-
     async uploadFile(file) {
         try {
             return await this.bucket.createFile(
@@ -99,7 +92,6 @@ export class Service {
             return false;
         }
     }
-
     async deleteFile(fileId) {
         try {
             await this.bucket.deleteFile(
@@ -112,7 +104,6 @@ export class Service {
             return false;
         }
     }
-
     previewFile(fileId) {
         try {
             return this.bucket.getFilePreview(
@@ -124,9 +115,6 @@ export class Service {
             return false;
         }
     }
-
-
-
 }
 
 const service = new Service();

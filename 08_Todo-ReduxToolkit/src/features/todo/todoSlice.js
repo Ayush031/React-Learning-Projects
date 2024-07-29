@@ -12,7 +12,8 @@ export const todoSlice = createSlice({
                 text: action.payload
                 // "text: action.payload.text" : payload is object and 'text' key is there and it's being assigned to 'text' so due to same it's not required
             }
-            state.todos.push(todo); // todos is defined in initial state
+            state.todos.push(todo);
+            // todos is defined in initial state
         },
         removeTodo: (state, action) => {
             state.todos = state.todos.filter((todo) => todo.id !== action.payload)
